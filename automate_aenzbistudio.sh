@@ -6,7 +6,7 @@ set -e
 
 # Configuration
 REPO_URL="https://github.com/allyelvis/AenzbiStudio.git"
-BRANCH_NAME="feature/user-management"
+BRANCH_NAME="user"
 COMMIT_MESSAGE="Added user management, performance optimizations, and updated documentation"
 TAG_VERSION="v1.0.2"
 TAG_MESSAGE="Release v1.0.2: User Management and Optimizations"
