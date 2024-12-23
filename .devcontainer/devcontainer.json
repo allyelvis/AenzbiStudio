@@ -1,0 +1,20 @@
+{
+  "name": "AenzbiStudio",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-docker:1": {}
+  },
+  "postCreateCommand": "bash scripts/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-node-azure-pack",
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
