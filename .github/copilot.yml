@@ -1,0 +1,12 @@
+copilot:
+  enabled: true
+  languages:
+    - python
+    - javascript
+    - typescript
+    - go
+    - java
+  ide:
+    - vscode
+    - jetbrains
+    - neovim
