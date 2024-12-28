@@ -1,0 +1,31 @@
+name: Enable Copilot
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  enable-copilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        
+      - name: Enable Copilot
+        run: |
+          mkdir -p .github
+          echo "copilot:
+  enabled: true
+  languages:
+    - python
+    - javascript
+    - go
+  ide:
+    - vscode
+    - jetbrains" > .github/copilot.yml
+          
+          git add .github/copilot.yml
+          git commit -m "Auto-enable Copilot"
+          git push
